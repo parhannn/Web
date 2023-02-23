@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/pictures/BG02.jpg">
+    <link rel="stylesheet" href="assets/message.css">
+    <title>BajuKU.</title>
+</head>
+<body>
+    <header>
+        <div class="logo" id="logo">BajuKU.</div>
+        <nav>
+            <li><a href="" style="border-right: 0;"></a></li>
+            <li><a class="nav-font" href="index.html" style="border-right: 0;">Home</a></li>
+            <li><a href=""></a></li>
+            <li><a href="" style="border-right: 0;"></a></li>
+            <li><a class="nav-font" href="profile.html" style="border-right: 0;">Our Profile</a></li>
+            <li><a href=""></a></li>
+            <li><a href="" style="border-right: 0;"></a></li>
+            <li><a class="nav-font" href="porto.html" style="border-right: 0;">Portofolio</a></li>
+            <li><a href=""></a></li>
+            <li><a href="" style="border-right: 0;"></a></li>
+            <li><a class="selected-nav-font" style="border-right: 0;" href="message.html">Message Us</a></li>
+            <li><a href="" style="border-right: 0;"></a></li>
+        </nav>
+    </header>
+    <div class="question center">Have a question?</div>
+    <form class="forum" name="forum" onsubmit="return validateform()">
+        <!-- nama -->
+        <div class="formula">
+            <label for="name" class="forum1">Nama</label>
+            <div class="dot">:</div>
+            <input class="input-data" type="text" name="full-name" id="name" placeholder="Nama Lengkap"/>
+        </div>
+
+        <!-- tanggal lahir -->
+        <div class="formula">
+            <label for="birth-date" class="forum1">Tanggal Lahir</label>
+            <div class="dot">:</div>
+            <input class="input-data" type="date" name="birth-date" id="birth-date"/>
+        </div>
+
+        <!-- jenis kelamin -->
+        <div class="formula">
+            <label class="forum1">Jenis Kelamin</label>
+            <div class="dot">:</div>
+            <input 
+            class="input-data-laki"
+            type="radio"
+            name="gender"
+            id="male"
+            value="Laki-laki"
+            for="male"
+            placeholder="a"/>Laki-laki
+            <input
+            class="input-data-perempuan" 
+            type="radio"
+            name="gender"
+            id="female"
+            value="Perempuan"
+            for="female"
+            placeholder="a"/>Perempuan
+        </div>
+
+        <!-- pesan -->
+        <div class="formula">
+            <label for="messages" class="forum1">Pesan</label>
+            <div class="dot">:</div>
+            <textarea class="input-pesan" class="message-box" name="messages" id="messages"></textarea>
+        </div>
+
+        <!-- tombol submit -->
+        <div>
+            <button class="sub-butt" type="submit">SUBMIT</button>
+        </div>
+    </form>
+    
+    <script>
+        function validateform() {
+            var name = document.forms["forum"]["full-name"].value;
+            var date = document.forms["forum"]["birth-date"].value;
+            var gender = document.forms["forum"]["gender"].value;
+            var messages = document.forms["forum"]["messages"].value;
+
+            document.getElementById("sender-full-name").innerText = name;
+            document.getElementById("sender-birth-date").innerText = date;
+            document.getElementById("sender-gender").innerText = gender;
+            document.getElementById("sender-messages").innerText = messages; 
+            
+            var frm = document.getElementsByName("forum")[0];
+            frm.reset();
+            return false;
+        }
+    </script>
+
+</body>
+</html>

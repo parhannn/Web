@@ -1,0 +1,99 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111422;
+}
+
+header {
+    padding: 20px;
+    padding-bottom: 50px;
+    border: 0.1px solid #FCA311;
+    border-radius: 3px;
+    background-color: #14213D;
+    box-shadow: 0 2px 4px 0 #FCA311, 0 2px 3px 0 #e5e5e5;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    border-style: solid;
+    border-width: 1pt;
+    border-radius: 3px;
+    border-color: #FCA311;
+    background-color: #111422;
+    padding: 7px;
+    margin-right: 30px;
+    float: right;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    border-style: solid;
+    padding: 8px;
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right-width: 1px;
+    border-color: #FCA311;
+    color: #e5e5e5;
+}
+
+.logo {
+    float: left;
+    color: #FCA311;
+    font-family: 'noto', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.greatings {
+    font-size: 40px;
+    font-family: 'Helvetica';
+    color: #FCA311;
+    padding: 50px;
+}
+
+.selected-nav-font {
+    color: #FCA311;
+    font-weight: bold;
+}
+
+.background-home {
+    width: 100%;
+    max-height: 800px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.nav-font:hover {
+    color: #FCA311;
+    transition: ease-in 0.3s;
+}
+
+/* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 992px */
+@media screen and (max-width: 992px) {
+    header {
+        height: 50px;
+    }
+    .logo {
+        margin-left: 40%;
+        margin-right: 50%;
+    }
+    nav {
+        margin-top: 10px;
+        font-size: 12px;
+        margin-right: 20px;
+    }
+  }
+   
+  /* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 600px */
+  @media screen and (max-width: 600px) {
+    /* ..... */
+  }

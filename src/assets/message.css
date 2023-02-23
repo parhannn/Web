@@ -1,0 +1,176 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111422;
+}
+
+header {
+    padding: 20px;
+    padding-bottom: 50px;
+    border: 0.1px solid #FCA311;
+    border-radius: 3px;
+    background-color: #14213D;
+    box-shadow: 0 2px 4px 0 #FCA311, 0 2px 3px 0 #e5e5e5;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    border-style: solid;
+    border-width: 1pt;
+    border-radius: 3px;
+    border-color: #FCA311;
+    background-color: #111422;
+    padding: 7px;
+    margin-right: 30px;
+    float: right;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    border-style: solid;
+    padding: 8px;
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right-width: 1px;
+    border-color: #FCA311;
+    color: #e5e5e5;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 50px;
+    color: #FCA311;
+}
+
+.logo {
+    float: left;
+    color: #FCA311;
+    font-family: 'noto', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.selected-nav-font {
+    color: #FCA311;
+    font-weight: bold;
+}
+
+.nav-font:hover {
+    color: #FCA311;
+    transition: ease-in 0.3s;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.question {
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 30px;
+    color: #FCA311;
+    font-size: 65px;
+    padding: 50px;
+    border: 4px solid #FCA311; 
+    width: 75%;
+    background-color: #14213D;
+    text-align: center;
+    box-shadow: 0 2px 4px 0 #FCA311;
+}
+
+.forum {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 80px;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    float: left;
+    background-color: #14213D;
+    color: #e5e5e5;
+    border: 4px solid #FCA311;
+    box-shadow: 0 2px 4px 0 #FCA311;
+    border-radius: 30px; 
+}
+
+.dot {
+    margin-top: -24px;
+    margin-left: 150px;
+    margin-bottom: -24px;
+}
+
+.input-data {
+    margin-left: 165px;
+    height: 20px;
+    width: 250px;
+}
+
+.input-data-perempuan {
+    margin-left: 10px;
+    height: 20px;
+}
+
+.input-data-laki {
+    margin-left: 165px;
+    height: 20px;
+}
+
+.input-pesan {
+    margin-left: 165px;
+    height: 100px;
+    width: 250px;
+}
+
+.sub-butt {
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    height: 30px
+}
+
+.output {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 80px;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    float: right;
+    background-color: #14213D;
+    color: #e5e5e5;
+    border: 4px solid #FCA311;
+    box-shadow: 0 2px 4px 0 #FCA311;
+    border-radius: 30px; 
+}
+
+/* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 992px */
+@media screen and (max-width: 992px) {
+    header {
+        height: 50px;
+    }
+    .logo {
+        margin-left: 40%;
+        margin-right: 50%;
+    }
+    nav {
+        margin-top: 10px;
+        font-size: 12px;
+        margin-right: 20px;
+    }
+
+    
+  }
+   
+  /* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 600px */
+  @media screen and (max-width: 600px) {
+    /* ..... */
+  }
