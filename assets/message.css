@@ -134,22 +134,7 @@ h2 {
     font-size: 20px;
     font-weight: bold;
     width: 100%;
-    height: 30px
-}
-
-.output {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 80px;
-    font-size: 20px;
-    margin-top: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
-    float: right;
-    background-color: #14213D;
-    color: #e5e5e5;
-    border: 4px solid #FCA311;
-    box-shadow: 0 2px 4px 0 #FCA311;
-    border-radius: 30px; 
+    height: 30px;
 }
 
 /* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 992px */
@@ -167,10 +152,69 @@ h2 {
         margin-right: 20px;
     }
 
+    .question {
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .dot {
+        margin-top: -13px;
+        margin-left: 40%;
+        margin-bottom: -5px;
+    }
+
+    .forum {
+        padding: 30px;
+        font-size: 10px;
+    }
     
+    .input-data {
+        margin-left: 50%;
+        margin-top: -20px;
+        height: 50%;
+        width: 50%;
+    }
+
+    .input-data-perempuan {
+        margin-left: 50%;
+        height: 50%;
+    }
+    
+    .input-data-laki {
+        margin-left: 50%;
+        height: 50%;
+    }
+    
+    .input-pesan {
+        margin-left: 50%;
+        height: 50%;
+        width: 50%;
+    }
+    
+    .sub-butt {
+        font-size: 10px;
+        font-weight: bold;
+        width: 50%;
+        height: 50%;
+    }
   }
    
   /* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 600px */
-  @media screen and (max-width: 600px) {
-    /* ..... */
+  @media screen and (max-width: 400px) {
+    header {
+        height: 50px;
+    }
+    .logo {
+        margin-left: 34%;
+        margin-right: 50%;
+    }
+    nav {
+        margin-top: 20px;
+        font-size: 10px;
+        margin-right: 15px;
+    }
+    nav a {
+        padding: 2px;
+        border-right-width: 1px;
+    }
   }

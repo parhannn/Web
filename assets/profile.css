@@ -155,20 +155,23 @@ h2 {
     nav {
         margin-top: 10px;
         font-size: 12px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-right: 14px;
     }
 
     .desc-first {
-        width: 75%;
+        font-size: 8px;
+        width: 80%;
     }
 
     .desc-second {
-        width: 75%;
+        font-size: 8px;
+        width: 80%;
     }
 
     .desc-third {
         height: 200px;
+        margin-top: 70%;
+        margin-bottom: 0;
     }
 
     .lampung {
@@ -196,11 +199,27 @@ h2 {
     }
 
     h2 {
+        font-size: 25px;
         margin: 30px;
     }
   }
    
   /* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 600px */
-  @media screen and (max-width: 600px) {
-    /* ..... */
+  @media screen and (max-width: 400px) {
+    header {
+        height: 50px;
+    }
+    .logo {
+        margin-left: 34%;
+        margin-right: 50%;
+    }
+    nav {
+        margin-top: 20px;
+        font-size: 10px;
+        margin-right: 14px;
+    }
+    nav a {
+        padding: 2px;
+        border-right-width: 1px;
+    }
   }
